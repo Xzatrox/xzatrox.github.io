@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vitamin Compatibility App - Main</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Vitamin Compatibility</h1>
+    <nav>
+      <ul>
+        <li><a href="main.html" class="active">Home</a></li>
+        <li><a href="comparison.html">Comparison Result</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SCAN SECTION -->
+  <section class="scanner-section">
+    <h2>Scan Product Barcode</h2>
+    <p>Tap the button to scan a product barcode. Detected vitamin supplements will be added to your list.</p>
+    <button class="scan-btn">Scan Barcode</button>
+    <!-- This could be replaced by an actual camera scanning integration -->
+  </section>
+
+  <!-- LIST SECTION -->
+  <section class="list-section">
+    <h2>Scanned Vitamins</h2>
+    <table class="vitamin-table">
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>Product Name</th>
+          <th>Vitamins</th>
+          <th>Serving Size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example row -->
+        <tr>
+          <td><input type="checkbox" name="vitaminSelect" /></td>
+          <td>Multi-Vitamin X</td>
+          <td>Vitamin A, C, D</td>
+          <td>1 Tablet</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="vitaminSelect" /></td>
+          <td>Omega-3 Capsules</td>
+          <td>Omega-3 (Fish Oil)</td>
+          <td>2 Capsules</td>
+        </tr>
+        <!-- Add more rows dynamically -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- COMPARISON ACTIONS SECTION -->
+  <section class="compare-section">
+    <h2>Compare Vitamins</h2>
+    <p>Select 2 vitamins for compatibility checking. Paid users can select multiple vitamins.</p>
+    <button class="compare-btn">Compare Selected</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Vitamin Compatibility Inc.</p>
+  </footer>
+
+</body>
+</html>
